@@ -1,11 +1,11 @@
 import './App.css';
-import { TestComponent } from './components/TestComponent';
+import { NavBar } from './components/NavBar';
 
 const App = () => {
   return (
     <div className="App">
+      <NavBar />
       <h1>Hello World!</h1>
-      <TestComponent />
     </div>
   );
 }
