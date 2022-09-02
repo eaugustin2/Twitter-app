@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 
 const NavBarItem = ({title, link}) => {
@@ -33,22 +34,42 @@ export const NavBar = () => {
                 </Nav.Item>
             </Nav> */}
 
-            <Row>
-                <Col>
-                    <NavBarItem title={"Home"} link={"#"} />
-                </Col>
+            <Row className='mt-2 border-bottom'>
+               <Col>
+                    <Row>
+                        <Col>
+                            <NavBarItem title={"Home"} link={"#"} />
+                        </Col>
 
-                <Col>
+                        <Col>
+                            <NavBarItem title={"Moments"} link={"#"} />
+                        </Col>
+
+                        <Col>
+                            <NavBarItem title={"Notifications"} link={"#"} />
+                        </Col>
+
+                        <Col>
+                            <NavBarItem title={"Messages"} link={"#"} />
+                        </Col>
+                    </Row>
+
+                    {/* <NavBarItem title={"Home"} link={"#"} />
+
                     <NavBarItem title={"Moments"} link={"#"} />
-                </Col>
 
-                <Col>
                     <NavBarItem title={"Notifications"} link={"#"} />
-                </Col>
 
-                <Col>
-                    <NavBarItem title={"Messages"} link={"#"} />
-                </Col>
+                    <NavBarItem title={"Messages"} link={"#"} /> */}
+               </Col>
+
+               <Col>
+                    <span>Twitter Icon</span>
+               </Col>
+
+               <Col>
+                    <Button>Tweet</Button>
+               </Col>
             </Row>
 
             {/* <div className='justify-content-left'>
