@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { ProfilePicture } from './ProfilePicture';
 
 
 const NavBarItem = ({title, link}) => {
@@ -68,7 +69,16 @@ export const NavBar = () => {
                </Col>
 
                <Col>
-                    <Button>Tweet</Button>
+                    <Row>
+                        <Col>
+                            <ProfilePicture />
+                        </Col>
+
+                        <Col>
+                            <Button className='mb-2'>Tweet</Button>
+                        </Col>
+                    </Row>
+                    
                </Col>
             </Row>
 
