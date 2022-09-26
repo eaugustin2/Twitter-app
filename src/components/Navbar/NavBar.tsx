@@ -1,8 +1,4 @@
 import React from 'react';
-// import Nav from "react-bootstrap/Nav";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-// import Button from "react-bootstrap/Button";
 import { ProfilePicture } from '../ProfilePicture/ProfilePicture';
 import  NavBarItem  from '../NavBarItem/NavBarItem'
 
@@ -10,7 +6,7 @@ export const NavBar = () => {
     return(
         <div className='navbar'>
 
-            <div className='navbar-left'>
+            <div className='navbar__left'>
 
                 <NavBarItem title='Home' anchor='#'/>
                 <NavBarItem title='Moments' anchor='#'/>
@@ -19,11 +15,11 @@ export const NavBar = () => {
 
             </div>
 
-            <div className='navbar-center'>
+            <div className='navbar__center'>
                 <NavBarItem title='Home' anchor='#'/>
             </div>
 
-            <div className='navbar-right'>
+            <div className='navbar__right'>
                 <ProfilePicture image={{imageUrl: 'https://image.shutterstock.com/image-vector/vector-blue-cartoon-cool-bird-260nw-107564378.jpg', altText: 'cool-bird'}}/>
                 <NavBarItem title='Home' anchor='#'/>
             </div>
